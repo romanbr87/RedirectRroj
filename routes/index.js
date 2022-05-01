@@ -9,7 +9,6 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next){
   console.log("Authenticate and Redirect")
   res.redirect('/12');
-  next();
 });
 
 router.get('/12', function(req, res, next) {
