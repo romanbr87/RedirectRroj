@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.use('/', function(req, res, next){
+router.post('/', function(req, res, next){
   console.log("Authenticate and Redirect")
   res.redirect('/12');
   next();
